@@ -1,0 +1,116 @@
+/* Resetting some default styles and setting the background color and font styles for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    background-color: hsl(226, 23%, 11%);
+    color: #c5c5c5;
+    font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: hsl(226, 23%, 14%);
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    width: -webkit-fill-available;
+}
+
+/* Styling for the navbar content */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    overflow: hidden;
+    background-color: hsl(226, 23%, 14%);
+    z-index: 2;
+    bottom: 0;
+    position: fixed;
+    width: -webkit-fill-available;
+}
+
+/* Styling for the main content area */
+main {
+    flex: 1; /* Allow main to grow and take up remaining space */
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    transition: padding-left 0.5s;
+    box-sizing: border-box;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Styling for the side navigation bar */
+.side-navbar {
+    height: -webkit-fill-available;
+    top: 0;
+    position: fixed;
+    left: -150px;
+    background-color: hsl(226, 23%, 14%);
+    overflow-x: hidden;
+    transition: left 0.5s;
+    width: 150px;
+    z-index: 1;
+    transform: translateX(0);
+}
+
+/* Styling for links within the side navigation bar */
+.side-navbar a {
+    
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    z-index: 1;
+}
+
+/* Hover effect for links within the side navigation bar */
+.side-navbar a:hover {
+    color: #f1f1f1;
+}
+
+/* Styling for the button within the side navigation bar */
+.side-navbar-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #c5c5c5;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Hover effect for the button within the side navigation bar */
+.side-navbar-button:hover {
+    color: #f1f1f1;
+}
+
+
+.sidebuttons{
+    margin-top: 70px;
+}
+
+/* Styling for content with opacity transition */
+.content {
+    opacity: 1;
+}
+
+/* Styling for hidden content with opacity transition */
+.content.hidden {
+    opacity: 0;
+    display: none;
+}
