@@ -114,3 +114,27 @@ main {
     opacity: 0;
     display: none;
 }
+
+/* Media query for screens with a maximum width of 600 pixels (adjust as needed) */
+@media only screen and (max-width: 600px) {
+    body {
+        /* Adjust overall font size for smaller screens */
+        font-size: 14px;
+    }
+
+    main {
+        margin: 10px; /* Adjust margins for smaller screens */
+        margin-top: 100px;
+    }
+
+    /* Adjust font size for headings and paragraphs */
+    h1, h2, h3, p {
+        font-size: 16px;
+    }
+
+    /* Adjust dimensions for images */
+    img {
+        max-width: 100%; /* Ensure images don't exceed the screen width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
