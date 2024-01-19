@@ -92,6 +92,8 @@ main {
     color: #c5c5c5;
     cursor: pointer;
     z-index: 2;
+    position: absolute;
+    left: 10px; /* Adjust the left position to your preference */
 }
 
 /* Hover effect for the button within the side navigation bar */
@@ -99,8 +101,7 @@ main {
     color: #f1f1f1;
 }
 
-
-.sidebuttons{
+.sidebuttons {
     margin-top: 70px;
 }
 
@@ -137,4 +138,45 @@ main {
         max-width: 100%; /* Ensure images don't exceed the screen width */
         height: auto; /* Maintain aspect ratio */
     }
+}
+
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added for proper positioning of search-input-wrapper */
+}
+
+#search-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    color: #c5c5c5;
+    position: absolute;
+    left: 40px; /* Adjust the left position to your preference */
+}
+
+.search-input-wrapper {
+    overflow: hidden;
+    width: 0;
+    position: absolute;
+    border-radius: 5px;
+    left: 40px; /* Adjust the left position to match the search button */
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Hide button when input is active */
+.search-container:hover #search-button {
+    opacity: 0;
 }
